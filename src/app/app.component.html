@@ -1,11 +1,24 @@
-<button (click)="clearSelection()">Clear Selection</button>
-<ag-grid-angular
-  style="width: 1000px; height: 500px"
-  class="ag-theme-alpine"
-  [columnDefs]="colDefs"
-  [defaultColDef]="defaultColDef"
-  [rowData]="rowData$ | async"
-  [rowSelection]="'multiple'"
-  [animateRows]="true"
-  (cellClicked)="onCellClicked($event)"
-></ag-grid-angular>
+<h1>Examples</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li>
+      <a
+        routerLink="/basic"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Basic AG Grid</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/filter-tool"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Filters Tool Panel</a
+      >
+    </li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>

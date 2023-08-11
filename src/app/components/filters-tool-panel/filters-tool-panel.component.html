@@ -1,0 +1,10 @@
+<p>filters-tool-panel works!</p>
+<ag-grid-angular
+  style="width: 1000px; height: 1000px"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [sideBar]="sideBar"
+  [rowData]="rowData"
+  (gridReady)="onGridReady($event)"
+  class="ag-theme-alpine"
+></ag-grid-angular>
