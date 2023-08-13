@@ -7,9 +7,15 @@ import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { FiltersToolPanelComponent } from './components/filters-tool-panel/filters-tool-panel.component';
 import { BasicGridComponent } from './components/basic-grid/basic-grid.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, FiltersToolPanelComponent, BasicGridComponent],
+  declarations: [
+    AppComponent,
+    FiltersToolPanelComponent,
+    BasicGridComponent,
+    HomeComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, AgGridModule],
   providers: [],
   bootstrap: [AppComponent],

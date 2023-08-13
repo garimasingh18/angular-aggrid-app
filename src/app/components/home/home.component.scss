@@ -1,0 +1,19 @@
+nav{
+    position: fixed;
+    top: 10rem;
+    left: 10rem;
+    height: 15rem;
+    background: white;
+    border-radius: 1rem;
+    ul{
+        z-index: 9;
+        list-style: none;
+        margin-right: 3rem;
+        li {
+            margin-bottom: 0.5rem;
+        }
+        li a{
+            text-decoration: none;
+        }
+    }
+}
