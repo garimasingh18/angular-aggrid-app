@@ -5,15 +5,16 @@ nav{
     height: 15rem;
     background: white;
     border-radius: 1rem;
+    text-align: left;
+
     ul{
         z-index: 9;
-        list-style: none;
+        list-style: disc;
+        color: #80bdff;
         margin-right: 3rem;
         li {
             margin-bottom: 0.5rem;
         }
-        li a{
-            text-decoration: none;
-        }
+        
     }
 }
