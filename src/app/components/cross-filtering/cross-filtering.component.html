@@ -1,0 +1,13 @@
+<div id="wrapper">
+  <div id="pieChart" class="ag-theme-alpine-dark"></div>
+  <ag-grid-angular
+    style="width: 980px; height: 500px"
+    class="ag-theme-alpine-dark"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowData]="rowData"
+    [enableCharts]="true"
+    [chartThemes]="chartThemes"
+    (firstDataRendered)="onFirstDataRendered($event)"
+  ></ag-grid-angular>
+</div>

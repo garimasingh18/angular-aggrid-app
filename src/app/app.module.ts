@@ -8,6 +8,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { FiltersToolPanelComponent } from './components/filters-tool-panel/filters-tool-panel.component';
 import { BasicGridComponent } from './components/basic-grid/basic-grid.component';
 import { HomeComponent } from './components/home/home.component';
+import { CrossFilteringComponent } from './components/cross-filtering/cross-filtering.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
     FiltersToolPanelComponent,
     BasicGridComponent,
     HomeComponent,
+    CrossFilteringComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, AgGridModule],
   providers: [],
